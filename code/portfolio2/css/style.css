@@ -1,0 +1,217 @@
+
+/*********************************************************************************/
+/* NavBar                                                                        */
+/*********************************************************************************/
+
+/*navbar position, letter spacing, transparent background */
+.navbar-nav.navbar-spacing {
+    float: left;
+    margin: 7.5px -25px;
+    background:  rgba(0, 67, 124, .25);
+
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;`
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+
+}
+a:hover {
+    color: #42dca3;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+/*navbar vertical posiont (padding)*/
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 310px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    /*navbar scrolling background*/
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background:  rgba(0, 67, 124, .7);
+        ;
+    }
+}
+
+
+.about-text {
+    z-index: 10000;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 35%;
+    margin-bottom: 20%;
+    font-size: 20px;
+}
+
+.main.style2 .content {
+    position: relative;
+    width: 35%;
+    display: inline-block;
+    vertical-align: middle;
+
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/*left*/
+.main.style2.left {
+}
+
+.main.style2.left:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.main.style2.left .content {
+    left: 0;
+    margin-top: 3%;
+    padding-top: 0;
+    padding-bottom: 2px;
+}
+
+/*right*/
+.main.style2.right {
+}
+
+.main.style2.right:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.main.style2.right .content {
+    left: 65%;
+    margin-top: 3%;
+    padding-top: 0;
+    padding-bottom: 2px;
+
+}
+
+/*images*/
+.main.style2.img-right .content {
+    left: 46%;
+}
+
+.main.style2.img-left .content {
+    left: 5%;
+}
+
+.main.style2.inactive {
+}
+
+.main.style2.inactive .content {
+}
+
+.main.style2.inactive.left .content {
+    left: -55%;
+}
+.main.style2.inactive.left .content {
+    right: 100%;
+}
+
+.main.style2.inactive.right .content {
+    left: 100%;
+}
+.main.style2.inactive.right .content {
+    left: 100%;
+}
+
+.main.style3 {
+    text-align: center;
+    padding: 6em 0 6em 0;
+}
+
+.main.style3 .content {
+}
+
+.main.style3 .content > header {
+    margin-bottom: 2em;
+}
+
